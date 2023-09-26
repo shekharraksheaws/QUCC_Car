@@ -4,6 +4,9 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,11 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DataLibrary\DataLibrary.csproj" />
+    <Folder Include="AppConfig\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="AppConfig\" />
+    <ProjectReference Include="DataLibrary\DataLibrary.csproj" />
   </ItemGroup>
 
 </Project>
